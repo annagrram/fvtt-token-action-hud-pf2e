@@ -1423,7 +1423,7 @@ Hooks.once('tokenActionHudCoreApiReady', async (coreModule) => {
                                 ? (game.system.version < '5.2.0')
                                     ? strike.totalModifier + parseInt(variant.label.split(' ')[1])
                                     : parseInt(variant.label.split(' ')[0])
-                                : parseInt(variant.label.split(' ')[1])
+                                : parseInt(variant.label.split(' ')[0])
                             const name = (this.calculateAttackPenalty) ? (bonus >= 0) ? `+${bonus}` : `${bonus}` : variant.label
                             return {
                                 id,
